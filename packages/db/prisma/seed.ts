@@ -9,10 +9,10 @@ async function main() {
   const [alice, bob] = await Promise.all([firstUser, secondUser]);
   if (!alice || !bob) throw new Error('users not created');
   
-  addBalance(prisma, alice, 20000, 0);
-  addBalance(prisma, bob, 2000, 0);
-  addOnRampTransaction(prisma, alice, new Date(), "Success", 20000, "token__1", "HDFC Bank");
-  addOnRampTransaction(prisma, bob, new Date(), "Success", 2000, "token__2", "HDFC Bank");
+  await addBalance(prisma, alice, 20000, 0);
+  await addBalance(prisma, bob, 2000, 0);
+  await addOnRampTransaction(prisma, alice, new Date(), "Failure", 20000, "token__1", "HDFC Bank");
+  await addOnRampTransaction(prisma, bob, new Date(), "Failure", 2000, "token__2", "HDFC Bank");
 
   console.log("Database Seeded successfully");
 }
