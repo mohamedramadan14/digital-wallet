@@ -1,4 +1,4 @@
-import { Card } from "@repo/ui/card";
+import { Card } from "@repo/ui/components/card";
 import ProcessingBadge from "./badges/ProcessingBadge";
 import { FailedBadge } from "./badges/FailedBadge";
 import SuccessBadge from "./badges/SuccessBadge";

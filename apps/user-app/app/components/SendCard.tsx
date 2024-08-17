@@ -1,8 +1,8 @@
 "use client"
-import { Button } from "@repo/ui/button";
-import { Card } from "@repo/ui/card";
-import { Center } from "@repo/ui/center";
-import { TextInput } from "@repo/ui/textinput";
+import { Button } from "@repo/ui/components/button";
+import { Card } from "@repo/ui/components/card";
+import { Center } from "@repo/ui/components/center";
+import { TextInput } from "@repo/ui/components/textinput";
 import { useState } from "react";
 import { p2pTransfer } from "../lib/actions/p2ptransfer";
 
